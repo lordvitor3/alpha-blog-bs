@@ -1,0 +1,23 @@
+<h1 align="center"> Todos os usuários </h1>
+
+<div align = "center">
+  <%= will_paginate renderer: BootstrapPagination::Rails%>
+</div>
+
+<% @users.each do |user| %>
+  <div class = "row" align = "center">
+	<div class="well col-md-4 col-md-offset-4" >
+		<ul class = "listing">
+		    <li><%= link_to gravatar_for(user), user_path(user) %></li>
+		    <li class = "article-title"><%= link_to user.username, user_path(user) %></li>
+			<li><b>email:</b> <%= user.email %></li>
+			<li><%= pluralize(user.articles.count, "article") if user.articles %></li>
+		</ul>
+	</div>
+  </div>	
+
+<%end%>
+
+<div align = "center">
+  <%= will_paginate renderer: BootstrapPagination::Rails%>
+</div>

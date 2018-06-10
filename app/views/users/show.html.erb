@@ -1,0 +1,20 @@
+
+<div class = "row">
+      <div class="col-xs-8 col-xs-offset-2">
+        <div class="well well-lg">
+			<p><b>suario: <%= @user.username%> </b></p>
+			<p><b>Email: <%= @user.email%> </b></p>
+
+
+			<div class="center">
+					<%= gravatar_for @user, size: 150 %>
+			</div>
+		</div>
+	   </div>
+</div>	   		
+
+<div class="col-xs-8 col-xs-offset-2">
+	<% if @user.articles %> <p><b>Articles:</b></p> <% end %> 
+</div>	
+
+ <%= render "articles/article", obj:@user.articles %>

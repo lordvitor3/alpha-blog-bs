@@ -26,6 +26,12 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '~> 3.3.7'
 gem 'sass-rails', '>= 3.2'
 
+gem 'will_paginate', '>= 3.1'
+gem 'will_paginate-bootstrap'
+
+##gem 'bootstrap-will_paginate'
+
+gem 'bcrypt'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
