@@ -13,7 +13,8 @@ class CategoriesControllerTest < ActionController::TestCase
 	end
 
 	test "should get new" do
-		session[:user_id] = @user.id
+		sign_in_as (@user,"password")
+		#session[:user_id] = @user.id - Não pode ser feito no rails 5
 		get :new
 		assert_response :success
 	end
