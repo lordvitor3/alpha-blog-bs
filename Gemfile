@@ -32,6 +32,9 @@ gem 'will_paginate-bootstrap'
 ##gem 'bootstrap-will_paginate'
 
 gem 'bcrypt'
+gem "rb-fsevent", "0.10.2"
+
+gem 'rails-controller-testing'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
