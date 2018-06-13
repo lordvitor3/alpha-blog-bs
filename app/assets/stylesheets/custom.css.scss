@@ -11,6 +11,13 @@ $navbar-default-bg: black;
 	font-weight: bold;
 }
 
+.badge {
+	background-color:#CEF65;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+	font-weight: bold;
+}
+
 #logo:hover {
 	color: #fff;
 	text-decoration: none;
@@ -38,6 +45,10 @@ $navbar-default-bg: black;
 	text-color: #fff;
 	font-size: 1.7em;
 	background-color: black;
+}
+
+.input_checkbox input{
+	width: auto !important;
 }
 
 .btn-xs{
@@ -113,3 +124,4 @@ footer ul li{
 	padding-left: 0;
 	line-height: 28px;
 }
+
